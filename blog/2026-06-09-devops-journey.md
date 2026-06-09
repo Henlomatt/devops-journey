@@ -1,17 +1,3 @@
-# Why Infrastructure as Code is more than just scripts
-
-## 1. The Problem
-(Write your thoughts here)
-
-## 2. The Solution
-(Write your thoughts here)
-
-## 3. The "Aha!" Moment
-(Write your thoughts here)
-
-## 4. The Gotcha
-(Write your thoughts here)
-
 # Por qué la Infraestructura como Código es mucho más que simples scripts
 
 *Infraestructura · DevOps · 9 de junio de 2026 · 5 min de lectura*
