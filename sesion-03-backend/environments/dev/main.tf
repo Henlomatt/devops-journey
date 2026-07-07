@@ -13,3 +13,7 @@ module "backend_dev" {
   subnet_id         = module.vpc_dev.public_subnet_id
   security_group_id = module.vpc_dev.security_group_id
 }
+
+output "public_ip" {
+  value = module.backend_dev.instance_public_ip
+}

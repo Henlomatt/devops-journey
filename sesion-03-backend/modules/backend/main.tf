@@ -39,7 +39,14 @@ resource "aws_instance" "app_server" {
   vpc_security_group_ids      = [var.security_group_id]
   associate_public_ip_address = true
 
+  # Referencia al archivo de script
+  user_data = file("${path.module}/user_data.sh")
+
   tags = {
     Name = "AppServer-${var.bucket_name}"
   }
+}
+
+output "user_data_content" {
+  value = file("${path.module}/user_data.sh")
 }

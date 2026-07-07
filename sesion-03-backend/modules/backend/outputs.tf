@@ -7,3 +7,7 @@ output "dynamodb_table_name" {
   description = "Nombre de la tabla de bloqueo DynamoDB"
   value       = aws_dynamodb_table.terraform_lock.name
 }
+
+output "instance_public_ip" {
+  value = aws_instance.app_server.public_ip
+}
