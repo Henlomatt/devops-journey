@@ -9,8 +9,9 @@ module "backend_dev" {
   table_name        = var.table_name
   instance_type     = "t3.micro"
   
-  # Pasamos los recursos de red recién creados
-  subnet_id         = module.vpc_dev.public_subnet_id
+  # Ahora pasamos la lista completa de subredes
+  vpc_id            = module.vpc_dev.vpc_id
+  subnet_ids        = module.vpc_dev.public_subnet_ids
   security_group_id = module.vpc_dev.security_group_id
 }
 

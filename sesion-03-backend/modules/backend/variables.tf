@@ -14,5 +14,17 @@ variable "instance_type" {
   default     = "t2.micro"
 }
 
-variable "subnet_id" { type = string }
-variable "security_group_id" { type = string }
+variable "vpc_id" {
+  description = "ID de la VPC"
+  type        = string
+}
+
+variable "subnet_ids" {
+  description = "Lista de IDs de las subredes"
+  type        = list(string)
+}
+
+variable "security_group_id" {
+  description = "ID del grupo de seguridad para la instancia"
+  type        = string
+}
